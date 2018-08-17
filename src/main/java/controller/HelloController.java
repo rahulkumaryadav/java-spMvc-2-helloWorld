@@ -13,8 +13,13 @@ public class HelloController implements Controller {
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
+
+        /*System.out.println("httpServletRequest"+httpServletRequest);
         String name = httpServletRequest.getParameter("name");
-        System.out.println("------------------>"+name);
+        System.out.println("------------------>"+name);*/
+
+        String name="rahul";
+
         Map map = new HashMap();
         map.put("msg" , name);
         return new ModelAndView("success",map);
